@@ -1,0 +1,17 @@
+Package: shiftshare
+Type: Package
+Title: A package to performe Shift Share Analysis in R
+Version: 0.1.0
+Author: Dimitrios Soudis
+Maintainer: Dimitrios Soudis <soudis.di@gmail.com>
+Description: Performe simple as well as dynamic shift share analysis.
+Depends: R (>= 2.10)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports:
+    dplyr,
+    magrittr,
+    lazyeval,
+    stats
+RoxygenNote: 6.0.1
