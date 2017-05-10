@@ -1,6 +1,7 @@
 # shiftshare
 
 The package contains two functions, namely `ssa` and `dssa`, that perform simple and dynamic shift share analysis.
+This is a first working version so errors might occur. Comments welcome!
 
 # Installation
 
