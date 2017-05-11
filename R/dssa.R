@@ -29,6 +29,8 @@ dssa <- function(df, y.var ,region.var, year.var, sector.var, gregion.id, sector
 
   etk <- get.etk(df, y.var, region.var, year.var, sector.var, gregion.id, sector.id, start.year, end.year)
 
-  out <- get.dssa(Gk, Gik, gik, etk, y.var, region.var, sector.var, year.var)
+  merged <- get.merged(etk, Gik, gik, Gk, region.var, sector.var, year.var)
+  
+  out <- get.dssa(merged, 'laged', region.var, sector.var, year.var)
   out
 }
