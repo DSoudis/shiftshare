@@ -8,7 +8,7 @@ get.Gk <- function(df, y.var ,region.var, year.var, sector.var, gregion.id, sect
   
   temp.Gk <- df %>% dplyr::filter_(filter.criteria) %>% dplyr::select_(year.var, y.var)
   
-  Gk <- (temp.Gk[[y.var]] - lag(temp.Gk[[y.var]])) / lag(temp.Gk[[y.var]])
+  Gk <- (temp.Gk[[y.var]] - dplyr::lag(temp.Gk[[y.var]])) / dplyr::lag(temp.Gk[[y.var]])
   Gk <- data.frame(cbind(start.year:end.year, Gk))
   names(Gk) <- c(year.var, 'Gk')
   Gk
