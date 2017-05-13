@@ -78,7 +78,7 @@ get.dssa <- function(merged, y.var, region.var, sector.var, year.var){
   merged$IMik <- IMik[,1]
   merged$RSik <- RSik[,1]
   
-  results <- merged %>% dplyr::group_by_(region.var, sector.var) %>% dplyr::summarise_(sum(NSik, na.rm = T),
+  results <- merged %>% dplyr::group_by_(region.var, sector.var) %>% dplyr::summarise(sum(NSik, na.rm = T),
                                                                         sum(IMik, na.rm = T),
                                                                         sum(RSik, na.rm = T))
   names(results) <- c(region.var, sector.var, 'NSik', 'IMik', 'RSik')
