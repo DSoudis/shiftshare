@@ -15,3 +15,5 @@ my.ssa <- ssa(usregions, y.var = 'TOT_EMP' ,region.var = 'ST', sector.var = 'OCC
               gregion.id = 'US', year.var = 'Year', sector.id = 'All Occupations',
               start.year = 2013, end.year = 2015)
 ```
+
+A worked uot example can be found here: [http://dsoudis.netlify.com/post/shiftshare/] 
